@@ -17,8 +17,8 @@ seaborn.set_palette("pastel")
 
 import matplotlib.pyplot as plt
 
-# https://matplotlib.org/stable/users/explain/text/text_props.html
-# https://matplotlib.org/3.1.1/gallery/text_labels_and_annotations/font_family_rc_sgskip.html#configuring-the-font-family
+# https://matplotlib.org/3.10.0/users/explain/text/text_props.html
+# https://matplotlib.org/3.10.0/gallery/text_labels_and_annotations/font_family_rc.html
 plt.rcParams["font.family"] = "sans-serif"
 # https://fonts.google.com/noto/specimen/Noto+Sans
 # rm -rf ~/.cache/matplotlib
@@ -189,8 +189,6 @@ class CozyChat(object):
 
         groupby_user = df_year.groupby("name")
         groupby_user_hours = groupby_user["hour"]
-        # Doesn't work in pandas 1.4 and higher:
-        # https://pandas.pydata.org/docs/whatsnew/v1.4.0.html#backwards-incompatible-api-changes
         mode_hour_per_user = groupby_user_hours.agg(mode)
 
         plt.figure(figsize=FIGURE_SIZE)

@@ -6,7 +6,7 @@ VK chat's txt can be saved via [Kate Mobile app](https://vk.com/kate_mobile) .
 
 Telegram group chat's json can be exported via [Telegram Desktop app](https://desktop.telegram.org).
 
-Python 3.8.1 or higher is required, 3.11 is tested.
+Python 3.10 or higher is required, 3.11 is tested.
 
 Quick start:
 ```bash
