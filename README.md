@@ -13,6 +13,7 @@ Quick start:
 git clone https://github.com/lysukhin/cozychat.git
 cd cozychat
 make venv
+#make venv POETRY_UPDATE=1
 eval "$(make venv-activate)"
 make run
 ```

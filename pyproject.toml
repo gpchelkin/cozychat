@@ -7,25 +7,24 @@ authors = ["Daniil Lysukhin <@lysukhin>"]
 [tool.poetry.dependencies]
 # https://python-poetry.org/docs/dependency-specification/
 # https://endoflife.date/python
-python = "^3.8.1"
-jupyterlab = "^4.0.7"
-nbconvert = { version = "*", extras = ["webpdf"] }
-tqdm = "^4.66.1"
-# pandas 1.4 and higher breaks show_total_messages_per_hour_per_user
-pandas = "1.3.5"
-# lxml 5.0.0 does not want to install
-lxml = "4.9.4"
-seaborn = "^0.13.0"
-wordcloud = "^1.9.2"
+python = "^3.10"
+jupyterlab = "^4.3.4"
+nbconvert = { version = "^7.16.4", extras = ["webpdf"] }
+tqdm = "^4.67.1"
+pandas = "^2.2.3"
+lxml = "^5.3.0"
+seaborn = "^0.13.2"
+wordcloud = "^1.9.4"
 razdel = "^0.5.0"
 stop-words = "^2018.7.23"
 python-obscene-words-filter = "^0.1.6"
 dostoevsky = "^0.6.0"
-# Forked from https://github.com/cfculhane/fastText.git
-# https://github.com/facebookresearch/fastText/pull/1292
-fasttext = { git = "https://github.com/gpchelkin/fastText", branch = "main" }
-scipy = "^1.9.3"
-img2pdf = "*"
+#fasttext = "^0.9.3"
+# https://github.com/facebookresearch/fastText
+# https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+fasttext = { git = "https://github.com/gpchelkin/fastText", branch = "gpchelkin-cozychat-fix" }
+scipy = "^1.14.1"
+img2pdf = "^0.5.1"
 
 [build-system]
 requires = ["poetry-core>=1.5.0"]

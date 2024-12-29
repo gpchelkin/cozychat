@@ -1,7 +1,7 @@
 SHELL:=/usr/bin/env bash
 VENV_PATH = venv
 POETRY_HOME = venv_poetry
-POETRY_UPDATE ?= 1
+POETRY_UPDATE ?= 0
 DEBUG ?= 0
 
 
